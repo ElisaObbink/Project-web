@@ -1,0 +1,149 @@
+h1 {
+    background-color: rgba(36,45,93,.9);
+    color: white;
+    font-family: 'NS regular';
+    font-size: 1.9em;
+    padding: 0.5em;
+}
+
+body{
+    font-family: 'NS regular';
+    background-color: #E7E6E8;
+    background-position: center;
+    margin-top: 4em;
+    background: #E7E6E8 url(image/ns.jpg) no-repeat;
+
+}
+
+article{
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+}
+
+h2{
+    color: darkblue;
+    font-family: 'NS bold';
+    padding: 0.5em;
+}
+
+a {
+    color: #1D75BB;
+}
+
+article h2 {
+    background-color: #FDCB35;
+    width: 6em;
+    height: 4em;
+}
+
+li {
+    list-style: none;
+}
+
+article>a {
+    color:#E72F71;
+    font-family: 'ns bold';
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+/* header */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.125em;
+    background-color: white;
+        
+}
+
+nav {
+    background-color: white;
+}
+
+li img {
+    height: 2.120em;
+}
+
+nav li {
+    list-style-type: none;
+    position: absolute;
+    right: 1em;
+    padding: 0.5em;
+    bottom: 1em;
+}
+
+nav li {
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+/*login*/
+
+form {
+    background-color: white;
+    padding: 2em;
+    margin: 2em;
+    
+}
+
+input {
+    width: 100%;
+}
+
+fieldset{
+    border: none;
+}
+
+legend {
+    text-align: center;
+    font-family: 'ns regular';
+    font-size: 2em;
+    color: #242D5D;
+    background-color: #FDCB35;
+    padding: 0.5em;
+    padding-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+label{
+    color: #242D5D;
+    font-family: 'ns bold';
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 0.5em;
+    width: 7em;
+    background-color: #E72F71;
+    color: white;
+    font-family: 'ns regular';
+    font-size: 1em;
+}
+
+
+/* fonts ns */
+
+@font-face {
+	font-family: 'NS regular';
+	src: url('../fonts/NSSans.eot');
+	src: url('../fonts/NSSans.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NSSans.woff') format('woff'),
+		url('../fonts/NSSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NS bold';
+	src: url('../fonts/NSSans-Bold.eot');
+	src: url('../fonts/NSSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NSSans-Bold.woff') format('woff'),
+		url('../fonts/NSSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
