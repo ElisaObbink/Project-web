@@ -1,0 +1,208 @@
+/* fonts ns */
+
+@font-face {
+	font-family: 'NS regular';
+	src: url('../fonts/NSSans.eot');
+	src: url('../fonts/NSSans.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NSSans.woff') format('woff'),
+		url('../fonts/NSSans.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'NS bold';
+	src: url('../fonts/NSSans-Bold.eot');
+	src: url('../fonts/NSSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NSSans-Bold.woff') format('woff'),
+		url('../fonts/NSSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('font/NexaBold.eot');
+    src: url('font/NexaBold.eot?#iefix') format('embedded-opentype'), url('font/NexaBold.woff') format('woff'), url('font/NexaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('font/NexaLight.eot');
+    src: url('font/NexaLight.eot?#iefix') format('embedded-opentype'), url('font/NexaLight.woff') format('woff'), url('font/NexaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+*/
+
+
+/*
+ HAMBURGER Made by Erik Terwan
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    /* make it look decent enough */
+    background: #fff;
+    color: black;
+    font-family: 'NS regular';
+}
+
+a {
+    text-decoration: none;
+    color: #242d5d;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e6b412;
+}
+
+#Filter {
+    display: block;
+    position: relative;
+    top: 3.125em;
+    left: 3.125em;
+    z-index: 1;
+}
+
+#Filter input {
+    display: block;
+    width: 2.500em;
+    height: 2.000em;
+    position: absolute;
+    top: -0.438em;
+    left: -0.313em;
+    cursor: pointer;
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+
+/*
+ * Just a quick hamburger
+ */
+
+#Filter span {
+    display: block;
+    width: 2.063em;
+    height: 0.250em;
+    margin-bottom: 0.313em;
+    position: relative;
+    background: transparent;
+    border-radius: 0.188em;
+    z-index: 1;
+    transform-origin: 0.250em 0em;
+    /* transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+opacity 0.55s ease;*/
+}
+
+
+/*
+#Filter span:first-child {
+    transform-origin: 0% 0%;
+}
+*/
+
+#Filter span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+
+#Filter input:checked ~ span {
+    opacity: 1;
+    color: transparent;
+    transform: rotate(45deg) translate(-0.125em, -0.063em);
+    background: #242d5d;
+}
+
+
+
+/*
+ * But let's hide the middle one.
+ */
+
+#Filter input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+}
+
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+
+#Filter input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg);
+}
+
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+
+#menu {
+    position: absolute;
+    width: 100%;
+    margin: -6.250em 0 0 -3.125em;
+    padding: 3.125em;
+    padding-top: 7.813em;
+    background: white;
+    list-style-type: none;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 0.625em 0;
+    font-size: 1.375em;
+}
+
+label {
+    color: #242d5d;
+    font-size: 2em;
+    padding: 2em;
+}
+
+
+/*
+ * And let's slide it in from the left
+ */
+
+#Filter input:checked ~ ul {
+    transform: none;
+}
+
+#sorteren {
+    list-style-type: none;
+}
+
+#sorteren label {
+    justify-content: flex-end;
+    display: flex;
+    color: black;
+    font-size: 0.9em;
+    margin: -6.250em 0;
+   padding-top: 7.125em;
+}
+
+#sorteren select {
+    display: flex;
+    float: right;
+    color: black;
+    font-size: 0.9em;
+    margin-top: 5em;
+}

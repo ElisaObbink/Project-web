@@ -1,0 +1,70 @@
+display:block = hele block klikbaar (nav)
+nav a:hover { 
+background: black;
+}= wanneer de muis er overheen gaat wordt het een kleur
+
+nav a: focus {
+/*zorgt ervoor dat met het toetsenbord de kleur ook veranderd als je tabt*/
+
+nav a:hover,
+nav a:focus = hover doet dit en focus ook.
+
+/* zorgt er voor dat de hover minder knipperd*/
+nav a:hover{
+    transition: .3s;
+    }
+
+/* mediaquiries is als de pagina te groot wordt wordt de lay out anders*/
+/* display flex zet alles naast elkaar*/
+/* alles wat je binnen de mediaquirie zet wordt toegepast bij een bepaalde grote*/
+    
+    @media(min-width:30em){
+        nav ul{
+            display:flex;
+        }
+        nav li {
+            border-right: 1px solid black;
+        }
+    }
+    
+    /* zie voor flexbox link voor voorbeelden (css-tricks)*/
+    /* zet bijvoorbeeld alles naar het einde van de pagina*/
+    
+    justify-content{
+        display: flex-end;
+    }
+    
+    /* zet ellement helemaal links van de rest*/
+    nav li: first of type{
+        margin-right: auto;
+    }
+    
+    /* of alleen de tweede uit menu aanroepen, de eerste gaat dan automatisch mee*/
+    
+    nav li: nth-of-type(2){
+        margin-left:auto;
+    }
+    
+    /* a die direct in de header staat en het item staat nu rechtsboven*/
+    header>a {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+    
+    /* werk met target en id. je kan hem nu stylen wanneer je er op klikt en hem dus linkt. hij klapt nu alleen niet terug #sad*/
+    header nav:target {
+        display: block;
+    }
+    
+    /* om ervoor te zorgen dat het menu weer "normaal" zichtbaar is wanneer het breder wordt -> weet ik niet zeker wat hij er in heeft staan nog even checken. */
+    @media (min-width:30em){
+        header nav{ display: block;}
+    }
+    
+    /* om de titel bij een groter scherm mooi boven de tekstjes te krijgen*/
+    main h2{
+        width: 100%;
+    }
+    
+    

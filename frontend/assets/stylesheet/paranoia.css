@@ -1,0 +1,43 @@
+body {
+    background-image: none;
+}
+
+section img {
+    width: 100%;
+}
+
+@media(min-width:20em) {
+    section img:nth-child(3) {
+        display: block;
+    }
+    section img:nth-child(2) {
+        display: none;
+    }
+    section img:first-of-type {
+        display: none;
+    }
+}
+
+@media(min-width:50em) {
+    section img:nth-child(2) {
+        display: block;
+    }
+    section img:first-of-type {
+        display: none;
+    }
+    section img:nth-child(3) {
+        display: none;
+    }
+}
+
+@media(min-width:78em) {
+    section img:first-of-type {
+        display: block;
+    }
+    section img:nth-child(2) {
+        display: none;
+    }
+    section img:nth-child(3) {
+        display: none;
+    }
+}

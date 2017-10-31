@@ -5,52 +5,159 @@
     <meta charset="UTF-8">
     <title>NS verhalen</title>
     <link rel="stylesheet" href="assets/stylesheet/style.css">
+    <link rel="stylesheet" href="assets/stylesheet/home.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+    <!--       navigatie  -->
     <header>
-        <nav>
-            <ul>
+        <nav class="nav">
 
+            <ul id="nav-menu">
                 <li>
-                    <a href="login.html"><img src="/assets/stylesheet/image/account.png" alt=""></a>
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle"><img src="assets/stylesheet/image/filter%20icoon.png" alt="hamburger"></label>
+                    <ul id="downloads">
+                        <li>
+                            <a href="index.html">Populair</a>
+                        </li>
+                        <li class="zoek">
+                            Dialoog
+                        </li>
+                        <li>
+                            Beschrijvend
+                        </li>
+                        <li>
+                            Vertellend
+                        </li>
+                        <li>
+                            Omslachtig
+                        </li>
+                        <li>
+                            Abstract
+                        </li>
+                        <li>
+                            Formeel
+                        </li>
+                        <li>
+                            Informeel
+                        </li>
+                    </ul>
+                </li>
+                <li class="logo">
+                    <a href="index.html"><img src="assets/stylesheet/image/2000px-Logo_NS.svg.png" alt="logo"></a>
                 </li>
                 <li>
-                    <a href="..."><img src="/assets/stylesheet/image/zoeken.png" alt=""></a>
+                    <a href="..."><img src="assets/stylesheet/image/boek%20icoon.png" alt="verhalen"></a>
+
                 </li>
+                <li class="boek">
+                    <img src="assets/stylesheet/image/boek-icoon-1.png" alt="">
+                </li>
+                <li>
+                    <a href="login.html"><img src="assets/stylesheet/image/account.png" alt=""></a>
+                </li>
+
 
             </ul>
         </nav>
+
+        <!--  Verhalen -->
+
+        <h1>Verhalen voor onderweg</h1>
     </header>
-    
-    <h1>Verhalen voor onderweg</h1>
-    <article>
-        <h2>Verassing</h2>
-        <a href="#">+</a>
-        <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah. Naar de bilbiotheek geweest. Met de bus.’ – ‘Gaat daar een bus naartoe?’ – ‘De bus stopt op het stationsplein.’ – ‘Ah. En vandaar moet je lopen?’ – ‘Ja, ik was met mijn zoon. Die sliep in zijn kinderwagen.’ – ‘Goed zo. Lekker wandelweer?’ […]</p>
-        <footer>
-            <ul>
-                <li>Genre: spreektaal</li>
-                <li>Posted on 12 juli 2011 by Molovich</li>
-            </ul>
-        </footer>
-    </article>
+    <main>
+       <div class="populair">
+        <h2>Populair</h2>
+            <article>
+               <a href="blind.html">
+                <h3><img src="assets/stylesheet/image/blind.titel.png" alt="blind"></h3>
+                </a>
+                <p>+</p>
+                <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. Mensen drommen naar buiten. Voorzichtig vind ik mijn weg naar de[…]</p>
+                <footer>
+                    <ul>
+                        <li>
+                            <div class="counter" data-from="0" data-to="345"></div>
+                        </li>
+                        <li>Posted on 12 juli 2011 by Molovich</li>
+                    </ul>
+                </footer>
+            </article>
+        
 
-    <article>
-        <h2>Beroemd</h2>
-        <a href="#">+</a>
-        <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug. ‘Mijn vrouw is een groot fan van u’, roept hij. ‘Doe haar de groeten’, zeg ik en stap uit. Centraal Station. Ik duw mijn zoon voort. Hij slaapt. Zich onbewust van de last die er […]</p>
-        <footer>
-            <ul>
-                <li>Genre: beschrijvend</li>
-                <li>Posted on 11 juli 2011 by Molovich</li>
-            </ul>
-        </footer>
-    </article>
+        
+            <article>
+               <a href="sportcommentaar.html">
+                <h3><img src="assets/stylesheet/image/sportcommentaar.titel.png" alt="sportcommentaar"></h3>
+                </a>
+                <p>+</p>
+                <p>En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek op het Stationsplein. De deuren gaat open, de spanning is te snijden. En wie komt daar als eerste uit? Ja hoor, het is de felgroene kinderwagen waarin Molovich Jr. ligt te slapen, op de voet gevolgd door zijn vader. De […]</p>
+                <footer>
+                    <ul>
+                        <li class="counter">330</li>
+                        <li>Posted on 11 juli 2011 by Molovich</li>
+                    </ul>
+                </footer>
+            </article>
+        
+
+        
+            <article>
+               <a href="paranoia.html">
+                <h3><img src="assets/stylesheet/image/paranoia.titel.png" alt="paranoia"></h3>
+                 </a>
+                <p>+</p>
+                <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. Het voelt alsof er een grote, knipperende pijl boven m’n hoofd hangt: HIER LOOPT HIJ! Gelukkig is[…]</p>
+                <footer>
+                    <ul>
+                        <li class="counter">289</li>
+                        <li>Posted on 11 juli 2011 by Molovich</li>
+                    </ul>
+                </footer>
+            </article>
+       
+</div>
+       <div class="zoekverhaal">
+       <h2>Dialoog</h2>
+        
+            <article>
+               <a href="paranoia.html">
+                <h3>Bejaard</h3>
+                </a>
+                <p>+</p>
+                <p>De chauffeur kijkt verveeld maar vooral ook licht geïrriteerd via zijn achteruitkijkspiegel toe hoe ik samen met mijn kleinzoon, die in zijn kinderwagen ligt te slapen, bus 21 uitstap. Waar die lichte irritatie vandaan komt weet ik niet, want dit is de […]</p>
+                <footer>
+                    <ul>
+                        <li class="counter">289</li>
+                        <li>Posted on 11 juli 2011 by Molovich</li>
+                    </ul>
+                </footer>
+            </article>
+        
+        
+            <article>
+               <a href="paranoia.html">
+                <h3>Stoned</h3>
+                </a>
+                <p>+</p>
+                <p>Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd de rook een tijdje binnen en blaas dan, de lippen gerond, het hoofd een beetje in de nek, een enorme stoomkegel de atmosfeer in. Het miezert[…]</p>
+                <footer>
+                    <ul>
+                        <li class="counter">289</li>
+                        <li>Posted on 11 juli 2011 by Molovich</li>
+                    </ul>
+                </footer>
+            </article>
+        
+</div>
 
 
+    </main>
 
+    <script type="text/javascript" src="javascript/home.js"></script>
 </body>
 
 </html>
